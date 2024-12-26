@@ -20,7 +20,7 @@
     <title>Web Studio</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="nav-container">
           <a href="./index.html" class="logo"
@@ -56,8 +56,85 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="burger-btn">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#menu-icon"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <!-- =============== Modal menu =============== -->
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#close-menu-icon"></use>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-list-item">
+                <a href="" class="mobile-menu-list-link">Studio</a>
+              </li>
+              <li class="mobile-menu-list-item">
+                <a href="" class="mobile-menu-list-link">Portfolio</a>
+              </li>
+              <li class="mobile-menu-list-item">
+                <a href="" class="mobile-menu-list-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address>
+            <ul class="mobile-menu-address-list">
+              <li class="mobile-menu-address-item">
+                <a href="tel:+110001111111" class="mobile-menu-address-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-address-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-menu-address-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="social">
+            <ul class="social-list">
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main>
       <!-- =============== Hero =============== -->
@@ -635,8 +712,8 @@
     </footer>
 
     <!-- =============== Modal overlay =============== -->
-    <!-- <div class="modal-overlay">
-      <div class="modal">
+    <div class="modal-overlay">
+      <div class="modal container">
         <button type="button" class="modal-close-btn">
           <svg width="8" height="8" class="modal-close-svg">
             <use href="./images/icons.svg#icon-close"></use>
@@ -713,16 +790,16 @@
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="privacy-policy">Privacy Policy</a>
+              <div class="label-text-container">
+                I accept the terms and conditions of the
+                <a class="privacy-policy">Privacy Policy</a>
+              </div>
             </label>
           </div>
 
           <button type="submit" class="modal-btn">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
-
-  <!-- Верстка виконана щодо трьох точок перелому: 320px, 768px і 1158px. -->
 </html>
